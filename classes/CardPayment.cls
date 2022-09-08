@@ -1,0 +1,21 @@
+public class CardPayment extends Payment{
+    integer cardNumber;
+    string cardHolderName;
+    public CardPayment(integer cardNumber, string cardHolder, integer Amount){
+        super(Amount);
+        this.cardNumber = cardNumber;
+        this.cardHolderName = cardHolderName;
+    }
+    public void cardPaymentDetails(){
+        system.debug('Hey User! Your need to make payment of Rs. '+ Amount + ' in card with ' + cardNumber + ' And card holder name as '+ cardHolderName);
+    }
+}
+
+
+
+
+/*CashPayment CP =new CashPayment(6000);
+CP.cashPaymentDetails();
+system.debug('====================');
+CardPayment mp = new CardPayment(659825, 'Ekta', 2500);
+mp.cardPaymentDetails();*/
