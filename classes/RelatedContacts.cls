@@ -10,7 +10,7 @@ public with sharing class RelatedContacts {
     }else{
     List<Contact> con = [select id,email,phone,name, Account.Name,
     accountid, firstname,lastname from Contact];
-    return con;
+    
     }
     }
     }
