@@ -5,7 +5,7 @@ public class CardPayment extends Payment{
         super(Amount);
         this.cardNumber = cardNumber;
         this.cardHolderName = cardHolderName;
-		
+		this.Name = 'Ekta';
     }
     public void cardPaymentDetails(){
         system.debug('Hey User! Your need to make payment of Rs. '+ Amount + ' in card with ' + cardNumber + ' And card holder name as '+ cardHolderName);
